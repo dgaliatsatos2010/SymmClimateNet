@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use SymmClimateNet, please cite the software release and the associated methodological paper when available."
+title: "SymmClimateNet: Symmetry-Guided Spatio-Temporal Climate Network"
+version: 1.0.0
+type: software
+authors:
+  - family-names: Galiatsatos
+    given-names: Dimitrios
+    orcid: "https://orcid.org/0009-0005-5232-1425"
+date-released: 2026-10-18
+license: MIT
+keywords:
+  - climate forecasting
+  - symmetry
+  - spatio-temporal neural network
+  - PyTorch
