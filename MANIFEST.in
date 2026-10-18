@@ -1,0 +1,6 @@
+include README.md LICENSE CITATION.cff CHANGELOG.md PUBLISHING.md
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include evidence *.csv *.json
+recursive-include tests *.py
+recursive-include .github *.yml *.yaml
