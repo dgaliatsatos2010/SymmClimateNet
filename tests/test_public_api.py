@@ -3,7 +3,7 @@ import torch
 import symmclimatenet
 
 def test_version_and_lock():
-    assert symmclimatenet.__version__ == "1.0.0"
+    assert symmclimatenet.__version__ == "1.0.1"
     assert symmclimatenet.locked_spec_dict()["variant"] == "set_temporal_plus_symmetric_spatial"
 
 def test_public_model_is_symmetric_and_permutation_invariant():
