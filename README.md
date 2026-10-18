@@ -1,12 +1,14 @@
 # SymmClimateNet
 
-**SymmClimateNet (Symmetry-Guided Spatio-Temporal Climate Network)** is a PyTorch research model for multi-station daily climate forecasting. Its public v1.0.0 architecture was selected by a predeclared model-lock protocol and was not changed after frozen benchmarking or external-source observational validation.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23450532.svg)](https://doi.org/10.5281/zenodo.23450532)
+
+**SymmClimateNet (Symmetry-Guided Spatio-Temporal Climate Network)** is a PyTorch research model for multi-station daily climate forecasting. Its public v1.0.1 release preserves the architecture selected by a predeclared model-lock protocol and was not changed after frozen benchmarking or external-source observational validation.
 
 ## Core idea
 
 SymmClimateNet treats station ordering as nuisance structure and uses a shared causal station encoder with permutation-invariant aggregation. Spatial information enters through a reciprocal operator constrained to be symmetric by construction, followed by a persistence-residual forecast head and predictive quantiles.
 
-The public release intentionally exposes only the **locked symmetric-spatial architecture**. The earlier antisymmetric branch was a development ablation and is not part of v1.0.0.
+The public release intentionally exposes only the **locked symmetric-spatial architecture**. The earlier antisymmetric branch was a development ablation and is not part of the public release.
 
 ## Installation
 
@@ -16,7 +18,7 @@ From a local checkout:
 pip install .
 ```
 
-After the PyPI release:
+From PyPI:
 
 ```bash
 pip install symmclimatenet
@@ -64,7 +66,7 @@ Raw weather observations and pretrained study checkpoints are not redistributed 
 
 ## Software citation
 
-See `CITATION.cff`. A version-specific Zenodo DOI will be added to the citation metadata after the GitHub `v1.0.0` release is archived.
+See `CITATION.cff`. The archived software release DOI is **10.5281/zenodo.23450532**.
 
 ## License
 
