@@ -48,17 +48,23 @@ symmclimatenet info
 
 ## Validation status
 
-- **Stage B:** development/model-selection evidence used to lock the architecture.
-- **Stage C:** frozen characterization against eight baselines.
-- **Stage D:** external-source observational validation.
+The archived evidence documents three distinct roles:
+
+- **Stage B:** development/model-selection evidence used to lock the architecture. The symmetric-only model was selected by a predeclared tie-breaking rule favoring parsimony.
+- **Stage C:** frozen characterization against eight baselines. The locked model ranked 1st, 2nd and 3rd at 1-, 3- and 7-day horizons, respectively.
+- **Stage D:** external-source observational validation. The locked model ranked 1st at 1 day (MAE 0.9714 °C), was essentially tied for best at 3 days (1.8350 °C), and ranked 3rd at 7 days (2.1848 °C).
 
 Because the Stage-D dates had been seen previously from the primary data source, Stage D is **external-source confirmation rather than untouched temporal confirmation**. No universal state-of-the-art claim is made.
 
-See `docs/VALIDATION.md` for details.
+See `docs/VALIDATION.md` and the derived files under `evidence/`.
+
+## Reproducibility boundary
+
+Raw weather observations and pretrained study checkpoints are not redistributed in the PyPI package. This repository preserves the tested reference implementation, architecture lock and derived evidence summaries. Data must be obtained under the original providers' terms.
 
 ## Software citation
 
-See `CITATION.cff`. A version-specific Zenodo DOI will be added after the GitHub `v1.0.0` release is archived.
+See `CITATION.cff`. A version-specific Zenodo DOI will be added to the citation metadata after the GitHub `v1.0.0` release is archived.
 
 ## License
 
